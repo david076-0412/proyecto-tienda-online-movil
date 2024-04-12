@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation_cliente"
+    app:startDestination="@+id/nav_inicio">
+
+    <fragment
+        android:id="@+id/nav_inicio"
+        android:name="com.aplication.appgestionrepartos.cliente_ui.inicio.InicioFragment"
+        android:label="@string/menu_inicio"
+        tools:layout="@layout/fragment_inicio" />
+
+    <fragment
+        android:id="@+id/nav_productos"
+        android:name="com.aplication.appgestionrepartos.cliente_ui.productos.ProductosFragment"
+        android:label="@string/menu_productos"
+        tools:layout="@layout/fragment_productos" />
+
+    <fragment
+        android:id="@+id/nav_compras"
+        android:name="com.aplication.appgestionrepartos.cliente_ui.compras.ComprasFragment"
+        android:label="@string/menu_compras"
+        tools:layout="@layout/fragment_compras" />
+
+
+    <fragment
+        android:id="@+id/nav_ubicacion"
+        android:name="com.aplication.appgestionrepartos.cliente_ui.ubicacion.RepartidoresFragment"
+        android:label="@string/menu_ubicacion"
+        tools:layout="@layout/fragment_repartidores" />
+
+
+</navigation>

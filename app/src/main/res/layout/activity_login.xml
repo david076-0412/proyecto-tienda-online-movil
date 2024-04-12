@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".chat.LoginActivity"
+    android:background="@drawable/background"
+    tools:ignore="MissingDefaultResource">
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        app:cardCornerRadius="15dp"
+
+        android:backgroundTint="@android:color/transparent"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+
+
+        <ScrollView
+            android:id="@+id/myScrollView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="INICIAR SESIÓN"
+                    android:textAlignment="center"
+                    android:textSize="34sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"/>
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp" />
+
+
+                <LinearLayout
+                    android:id="@+id/images_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="163dp"
+                    android:background="@drawable/logo_perfil"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:visibility="visible">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        app:cardCornerRadius="70dp">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/login_usuario" />
+
+                    </androidx.cardview.widget.CardView>
+
+
+                </LinearLayout>
+
+
+
+
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp" />
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/correo"
+                        android:layout_width="360dp"
+                        android:layout_height="55dp"
+                        android:layout_marginTop="10dp"
+
+                        android:background="@drawable/custom_input"
+                        android:drawableStart="@drawable/custom_email_icon"
+                        android:drawableLeft="@drawable/ic_baseline_person_outline_24"
+                        android:drawablePadding="12dp"
+                        android:ems="10"
+                        android:fontFamily="@font/montserratregular"
+                        android:paddingStart="10dp"
+
+
+                        android:hint="Correo"
+                        android:inputType="textEmailAddress"
+                        android:textSize="18dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"/>
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+                <com.google.android.material.textfield.TextInputLayout
+
+                    android:layout_width="360dp"
+                    android:layout_height="70dp"
+                    android:layout_marginTop="10dp"
+                    app:boxStrokeWidth="0dp"
+                    app:boxStrokeWidthFocused="0dp"
+                    app:helperTextTextColor="@color/IconFocused"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:passwordToggleEnabled="true"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/correo"
+                    app:placeholderTextColor="@color/IconFocused"
+                    app:endIconMode="password_toggle">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/contrasena"
+                        android:layout_width="match_parent"
+                        android:layout_height="55dp"
+
+                        android:background="@drawable/custom_input"
+                        android:drawableStart="@drawable/custom_lock_icon"
+                        android:drawableLeft="@drawable/ic_baseline_info_24"
+
+
+                        android:drawablePadding="12dp"
+                        android:ems="10"
+
+
+                        android:fontFamily="@font/montserratregular"
+                        android:hint="Contraseña"
+                        android:inputType="textPassword"
+                        android:paddingStart="10dp"
+
+                        android:textColorHighlight="@color/IconFocused"
+                        android:textColorLink="@color/IconFocused"
+                        android:textSize="18dp" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp" />
+
+                <TextView
+                    android:id="@+id/olvidaste_contrasena"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:text="Olvidaste la contraseña"
+
+                    android:gravity="right"
+                    android:textSize="20sp"
+                    android:textColor="#FFFFFF"
+                    android:textStyle="bold" />
+
+
+
+
+
+                <Spinner
+                    android:id="@+id/spn"
+                    android:layout_width="188dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="12dp"
+                    android:ems="10"
+                    android:fontFamily="@font/montserratregular"
+
+                    android:background="@drawable/spinner_personalizado"
+
+
+                    android:drawablePadding="12dp"
+                    android:paddingStart="10dp"
+                    android:textColorHighlight="@color/IconFocused"
+                    android:textColorLink="@color/IconFocused"
+                    android:textSize="18dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"/>
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp" />
+
+
+                <Switch
+                    android:id="@+id/active"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Remember "
+                    android:textColor="@color/black"
+
+                    android:drawablePadding="12dp"
+                    android:paddingStart="10dp"
+                    android:textSize="18dp"
+
+
+                    android:thumb="@drawable/thumb"
+                    app:track="@drawable/track"
+                    app:showText="true"
+                    android:textOn=""
+                    android:textOff=""
+
+
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                </Switch>
+
+
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp" />
+
+                <Button
+                    android:id="@+id/btn_ingresar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/ripple_effect_ingresar"
+                    android:text="Ingresar"
+                    app:cornerRadius="50dp"
+                    android:textColor="@color/white"/>
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="5dp" />
+
+                <Button
+                    android:id="@+id/btn_register"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/ripple_effect_registrar"
+                    android:text="registrarme"
+                    android:textSize="12sp"
+                    android:textColor="@color/white"/>
+
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="15dp" />
+
+
+
+
+            </LinearLayout>
+
+
+
+
+        </ScrollView>
+
+
+
+
+    </androidx.cardview.widget.CardView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

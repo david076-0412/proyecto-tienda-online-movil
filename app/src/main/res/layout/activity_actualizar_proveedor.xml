@@ -1,0 +1,359 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".administrador.ActualizarProveedorActivity">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            app:cardCornerRadius="15dp"
+
+            android:backgroundTint="@android:color/transparent"
+
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ScrollView
+                android:id="@+id/myScrollView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scrollbars="none">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="PROVEEDOR"
+                        android:textAlignment="center"
+                        android:textSize="34sp"
+                        android:textStyle="bold" />
+
+                    <Space
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp" />
+
+
+                    <LinearLayout
+                        android:id="@+id/images_btn"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:visibility="visible">
+
+
+                        <Space
+                            android:layout_width="match_parent"
+                            android:layout_height="20dp" />
+
+
+                        <androidx.cardview.widget.CardView
+                            app:cardCornerRadius="70dp"
+                            android:layout_width="150dp"
+                            android:layout_height="150dp">
+
+                            <ImageView
+                                android:id="@+id/perfil_photo"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="@drawable/usuario" />
+
+                        </androidx.cardview.widget.CardView>
+
+                        <Space
+                            android:layout_width="match_parent"
+                            android:layout_height="20dp" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                            <Button
+                                android:id="@+id/btn_subir_photo"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/ripple_effect_ingresar"
+                                android:drawableLeft="@drawable/ic_edit"
+                                android:text="SUBIR"
+                                android:textColor="@color/white"
+                                tools:ignore="TextContrastCheck" />
+
+
+                            <Space
+                                android:layout_width="20dp"
+                                android:layout_height="match_parent" />
+
+
+                            <Button
+                                android:id="@+id/btn_eliminar_photo"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/ripple_effect_photo_eliminar"
+                                android:drawableLeft="@drawable/ic_delete"
+                                android:text="ELIMINAR"
+                                android:textColor="@color/white" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+                    <Space
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp" />
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/nombre"
+                            android:layout_width="match_parent"
+                            android:layout_height="48dp"
+
+                            android:background="@drawable/custom_input"
+                            android:drawableStart="@drawable/custom_person_icon"
+
+                            android:drawablePadding="12dp"
+
+                            android:ems="10"
+                            android:fontFamily="@font/montserratregular"
+
+                            android:hint="Nombre"
+                            android:inputType="textWebEmailAddress"
+                            tools:ignore="TouchTargetSizeCheck" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <Space
+                        android:layout_width="match_parent"
+                        android:layout_height="10dp" />
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/apellido"
+                            android:layout_width="match_parent"
+                            android:layout_height="48dp"
+
+                            android:drawableStart="@drawable/custom_person_icon"
+                            android:drawablePadding="12dp"
+
+
+                            android:background="@drawable/custom_input"
+                            android:fontFamily="@font/montserratregular"
+
+                            android:ems="10"
+                            android:hint="Apellido"
+                            android:inputType="textWebEmailAddress"
+                            tools:ignore="TouchTargetSizeCheck" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <Space
+                        android:layout_width="match_parent"
+                        android:layout_height="10dp" />
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/dni"
+                            android:layout_width="match_parent"
+                            android:layout_height="48dp"
+
+                            android:background="@drawable/custom_input"
+                            android:drawableStart="@drawable/custom_dni_icon"
+
+
+                            android:drawablePadding="12dp"
+                            android:ems="10"
+
+                            android:fontFamily="@font/montserratregular"
+                            android:hint="DNI"
+                            android:inputType="number"
+                            android:maxLength="8"
+                            tools:ignore="TouchTargetSizeCheck,TouchTargetSizeCheck" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <Space
+                        android:layout_width="match_parent"
+                        android:layout_height="10dp" />
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/direccion"
+                            android:layout_width="match_parent"
+                            android:layout_height="48dp"
+
+                            android:background="@drawable/custom_input"
+                            android:drawableStart="@drawable/custom_direccion_icon"
+
+                            android:drawablePadding="12dp"
+                            android:ems="10"
+
+                            android:fontFamily="@font/montserratregular"
+                            android:hint="Direccion"
+                            android:inputType="textPersonName"
+                            tools:ignore="TouchTargetSizeCheck" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <Space
+                        android:layout_width="match_parent"
+                        android:layout_height="11dp" />
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/email"
+                            android:layout_width="match_parent"
+                            android:layout_height="48dp"
+
+                            android:background="@drawable/custom_input"
+                            android:drawableStart="@drawable/custom_email_icon"
+
+                            android:drawablePadding="12dp"
+                            android:ems="10"
+
+                            android:fontFamily="@font/montserratregular"
+                            android:hint="E-mail"
+                            android:inputType="textPersonName"
+                            tools:ignore="TouchTargetSizeCheck,TextContrastCheck" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <Space
+                        android:layout_width="match_parent"
+                        android:layout_height="10dp" />
+
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/empresa"
+                            android:layout_width="match_parent"
+                            android:layout_height="48dp"
+
+                            android:drawableStart="@drawable/custom_empresa_icon"
+                            android:drawablePadding="12dp"
+
+                            android:background="@drawable/custom_input"
+                            android:fontFamily="@font/montserratregular"
+
+
+                            android:ems="10"
+                            android:hint="Empresa"
+                            android:inputType="textPersonName"
+                            tools:ignore="TouchTargetSizeCheck,TextContrastCheck" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+
+                    <Space
+                        android:layout_width="match_parent"
+                        android:layout_height="10dp" />
+
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/celular"
+                            android:layout_width="match_parent"
+                            android:layout_height="48dp"
+
+                            android:drawableStart="@drawable/custom_celular_icon"
+                            android:drawablePadding="12dp"
+
+                            android:background="@drawable/custom_input"
+                            android:fontFamily="@font/montserratregular"
+
+
+                            android:ems="10"
+                            android:hint="Celular"
+                            android:inputType="phone"
+                            android:maxLength="12"
+                            tools:ignore="TouchTargetSizeCheck,TextContrastCheck" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+
+                    <Space
+                        android:layout_width="match_parent"
+                        android:layout_height="10dp" />
+
+
+                    <Button
+                        android:id="@+id/btn_actualizar"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/ripple_effect_finalizar"
+                        android:text="ACTUALIZAR"
+                        android:textColor="@color/black"
+                        android:textStyle="bold" />
+
+
+                    <Space
+                        android:layout_width="match_parent"
+                        android:layout_height="10dp" />
+
+                    <Button
+                        android:id="@+id/btn_regresar"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/ripple_effect_regresar"
+                        android:text="REGRESAR"
+                        android:textColor="@color/white"
+                        android:textStyle="bold" />
+
+
+                    <Space
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp" />
+
+                </LinearLayout>
+
+
+            </ScrollView>
+
+
+
+
+        </androidx.cardview.widget.CardView>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+
+</LinearLayout>

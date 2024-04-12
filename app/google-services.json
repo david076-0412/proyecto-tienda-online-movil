@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "1074674713524",
+    "firebase_url": "https://appgestionrepartos-5771a-default-rtdb.firebaseio.com",
+    "project_id": "appgestionrepartos-5771a",
+    "storage_bucket": "appgestionrepartos-5771a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1074674713524:android:611da35cca3ec5d0d068e1",
+        "android_client_info": {
+          "package_name": "com.aplication.appgestionrepartos"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1074674713524-uhq3lt9ddad3ds7e6enbsppfv71tsm03.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAAl5TJvlJFedLsGIfFOFoCo3OkgVPmxAw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1074674713524-uhq3lt9ddad3ds7e6enbsppfv71tsm03.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

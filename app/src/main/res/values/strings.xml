@@ -1,0 +1,70 @@
+<resources>
+    <string name="app_name">APPGESTIONREPARTOS</string>
+    <string name="title_activity_interfaz_cliente">InterfazClienteActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+
+
+    <string name="action_perfil">Perfil</string>
+    <string name="action_settings">Configuracion</string>
+    <string name="action_quejas_sugerencias">Quejas o Sug.</string>
+
+    <string name="action_cerrar_Sesion">Cerrar Sesion</string>
+    <string name="action_cerrar_aplicacion">Cerrar App</string>
+
+
+    <string name="menu_inicio">Inicio</string>
+    <string name="menu_productos">Productos</string>
+    <string name="menu_compras">Compras</string>
+    <string name="menu_ubicacion">Ubicacion</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_interfaz_administrador">InterfazAdministradorActivity</string>
+
+
+    <string name="menu_home">Inicio</string>
+    <string name="menu_gallery">Productos</string>
+    <string name="menu_slideshow">Pedidos</string>
+
+    <string name="title_activity_maps">MapsActivity</string>
+
+
+    <string name="submensaje">SE DEBE DE REALIZAR LA TRANSFERENCIA A ESTE N.CUENTA:</string>
+
+
+    //Headings
+    <string name="heading_one">Rápido y Pagos Fáciles</string>
+    <string name="heading_two">Mensajeria instantanea</string>
+    <string name="heading_three">Pago con/sin efectivo</string>
+    <string name="heading_fourth">Pague en cualquier lugar</string>
+
+    //Description
+    <string name="desc_one">Haga crecer su negocio aceptando pagos con tarjeta</string>
+    <string name="desc_two">Mensajes directos al asesor virtual y al asesor humano</string>
+    <string name="desc_three">Realiza tus pagos con una tarjeta de credito o paga cuando llegue el repartidor</string>
+    <string name="desc_fourth">Complete la compra con una transferencia de efectivo o espere a que llegue el repartidor para realizar el pago</string>
+    <string name="title_activity_interfaz_repartidor">InterfazRepartidorActivity</string>
+
+
+    <string name="start_new">New</string>
+    <string name="brush">Brush</string>
+    <string name="erase">Erase</string>
+    <string name="save">Save</string>
+    <string name="paint">Paint</string>
+    <string name="small">Small</string>
+    <string name="medium">Medium</string>
+    <string name="large">Large</string>
+
+
+
+    <string name="descripcion">Esta aplicación que esta compuesta por tres aplicaciones en una que son:\n
+    -Aplicación de compras\n
+    -Aplicación de Gestión de Repartos\n
+    -Aplicación de supervisión y monitoreo\n</string>
+
+
+</resources>

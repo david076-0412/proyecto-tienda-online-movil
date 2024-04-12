@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation_administrador"
+    app:startDestination="@+id/nav_inicio_A">
+
+    <fragment
+        android:id="@+id/nav_inicio_A"
+        android:name="com.aplication.appgestionrepartos.administrador_ui.inicio_a.InicioAFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_inicioa" />
+
+    <fragment
+        android:id="@+id/nav_productos_a"
+        android:name="com.aplication.appgestionrepartos.administrador_ui.productos.ProductosAFragment"
+        android:label="@string/menu_gallery"
+        tools:layout="@layout/fragment_productosa" />
+
+    <fragment
+        android:id="@+id/nav_pedidos"
+        android:name="com.aplication.appgestionrepartos.administrador_ui.pedidos.PedidosAFragment"
+        android:label="@string/menu_slideshow"
+        tools:layout="@layout/fragment_pedidosa" />
+
+
+    <fragment
+        android:id="@+id/nav_pagos"
+        android:name="com.aplication.appgestionrepartos.administrador_ui.pagos.PagosFragment"
+        android:label="Pagos"
+        tools:layout="@layout/fragment_pagos" />
+
+    <fragment
+        android:id="@+id/nav_monitoreo"
+        android:name="com.aplication.appgestionrepartos.administrador_ui.monitoreo.MonitoreoFragment"
+        android:label="Monitoreo"
+        tools:layout="@layout/fragment_monitoreo" />
+
+
+
+
+
+
+</navigation>

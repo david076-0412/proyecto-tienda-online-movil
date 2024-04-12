@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ripple
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:color="@color/colorRipple">     <!-- ripple color -->
+
+    <!-- for Button -->
+    <item>
+        <shape android:shape="rectangle">
+            <corners android:radius="20dp" />
+
+            <gradient
+                android:startColor="#98D12A"
+                android:endColor="#98F4EC"
+                android:angle="0"/>
+
+        </shape>
+    </item>
+
+</ripple>

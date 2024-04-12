@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation_repartidor"
+    app:startDestination="@+id/nav_inicio_R">
+
+    <fragment
+        android:id="@+id/nav_inicio_R"
+        android:name="com.aplication.appgestionrepartos.repartidor_ui.inicio_r.InicioRFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_inicior" />
+
+    <fragment
+        android:id="@+id/nav_cliente_pedido"
+        android:name="com.aplication.appgestionrepartos.repartidor_ui.cliente_pedido.Clientes_PedidoFragment"
+        android:label="Clientes"
+        tools:layout="@layout/fragment_cliente_pedido" />
+
+    <fragment
+        android:id="@+id/nav_cliente_producto"
+        android:name="com.aplication.appgestionrepartos.repartidor_ui.cliente_producto.Clientes_ProductosFragment"
+        android:label="@string/menu_slideshow"
+        tools:layout="@layout/fragment_cliente_producto" />
+</navigation>

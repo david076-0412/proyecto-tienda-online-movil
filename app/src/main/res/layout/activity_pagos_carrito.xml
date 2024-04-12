@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".cliente.Pagos_CarritoActivity">
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        app:cardCornerRadius="15dp"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+
+
+        <ScrollView
+            android:id="@+id/myScrollView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+
+                <LinearLayout
+                    android:id="@+id/images_btn"
+                    android:layout_width="350dp"
+                    android:layout_height="550dp"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:visibility="visible">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="180dp"
+                        android:layout_height="185dp"
+                        app:cardCornerRadius="20dp">
+
+                        <ImageView
+
+                            android:layout_width="180dp"
+                            android:layout_height="185dp"
+                            android:background="@drawable/espera_24horas" />
+
+                    </androidx.cardview.widget.CardView>
+
+                    <Space
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp" />
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="COMPRA EN ESPERA"
+                        android:textAlignment="center"
+                        android:textSize="21sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"/>
+
+
+                    <Space
+                        android:layout_width="match_parent"
+                        android:layout_height="5dp" />
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/submensaje"
+                        android:textAlignment="center"
+                        android:textSize="18sp"
+
+                        android:textColor="@color/black"/>
+
+                    <Space
+                        android:layout_width="match_parent"
+                        android:layout_height="5dp" />
+
+
+                    <TextView
+                        android:id="@+id/n_cuenta_bancaria"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="número de cuenta b.nacional"
+                        android:textAlignment="center"
+                        android:textSize="21sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"/>
+
+                    <Space
+                        android:layout_width="match_parent"
+                        android:layout_height="5dp" />
+
+                    <TextView
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Celular:"
+                        android:textAlignment="center"
+                        android:textSize="21sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"/>
+
+                    <TextView
+
+                        android:id="@+id/celular_administrador"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Telefono"
+                        android:textAlignment="center"
+                        android:textSize="21sp"
+                        android:textColor="@color/black"/>
+
+                    <Space
+                        android:layout_width="match_parent"
+                        android:layout_height="5dp" />
+
+
+                    <TextView
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Horario de Atención:"
+                        android:textAlignment="center"
+                        android:textSize="21sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"/>
+
+                    <Space
+                        android:layout_width="match_parent"
+                        android:layout_height="5dp" />
+
+
+                    <TextView
+
+                        android:id="@+id/horario_atencion"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Lunes-Viernes"
+                        android:textAlignment="center"
+                        android:textSize="21sp"
+                        android:textColor="@color/black"/>
+
+                    <Space
+                        android:layout_width="match_parent"
+                        android:layout_height="5dp" />
+
+
+                    <TextView
+
+                        android:id="@+id/hora_atencion"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="9:00 a 18:00"
+                        android:textAlignment="center"
+                        android:textSize="21sp"
+                        android:textColor="@color/black"/>
+
+                    <Space
+                        android:layout_width="match_parent"
+                        android:layout_height="10dp" />
+
+                    <Button
+                        android:id="@+id/btn_pedido_total"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/ripple_effect_regresar"
+                        android:text="PRODUCTO TOTAL"
+                        android:textColor="@color/white"/>
+
+                    <Space
+                        android:layout_width="match_parent"
+                        android:layout_height="15dp" />
+
+
+
+
+
+                </LinearLayout>
+
+
+
+
+
+
+
+            </LinearLayout>
+
+
+
+
+        </ScrollView>
+
+
+
+
+    </androidx.cardview.widget.CardView>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

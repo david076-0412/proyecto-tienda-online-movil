@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondo_anuncio_pagos"
+
+    tools:context=".pago.Pago_Anuncio_OficialActivity">
+
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        app:cardCornerRadius="15dp"
+        android:backgroundTint="@android:color/transparent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <ScrollView
+            android:id="@+id/myScrollView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="none">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="500dp"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <Space
+                    android:layout_width="167dp"
+                    android:layout_height="58dp" />
+
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:layout_width="289dp"
+                    android:layout_height="272dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/marco_logo"
+                    android:foregroundGravity="center"
+                    android:src="@drawable/imagen_pago_anuncio"
+                    app:shapeAppearanceOverlay="@style/circleImageView" />
+
+                <Space
+                    android:layout_width="187dp"
+                    android:layout_height="27dp" />
+
+                <LinearLayout
+                    android:layout_width="359dp"
+                    android:layout_height="400dp"
+                    android:background="@drawable/marco_precios"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+
+                    <Space
+                        android:layout_width="187dp"
+                        android:layout_height="38dp" />
+
+                    <Button
+                        android:id="@+id/btn_un_mes"
+                        android:layout_width="190dp"
+                        android:layout_height="62dp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/ripple_effect_un_mes"
+                        android:drawableLeft="@drawable/ic_credit_card"
+                        android:gravity="center"
+                        android:scaleType="center"
+                        android:text="1 MES \n BUY S/.35.80"
+                        android:textColor="@color/white"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+
+                    <Space
+                        android:layout_width="190dp"
+                        android:layout_height="120dp" />
+
+                    <Button
+                        android:id="@+id/btn_un_ano"
+                        android:layout_width="190dp"
+                        android:layout_height="62dp"
+                        android:background="@drawable/ripple_effect_un_ano"
+                        android:drawableLeft="@drawable/ic_credit_card"
+                        android:gravity="center"
+                        android:text="1 AÑO \n BUY S/.429.60"
+                        android:textColor="@color/white"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+
+                    <Space
+                        android:layout_width="190dp"
+                        android:layout_height="34dp" />
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+        </ScrollView>
+
+
+
+    </androidx.cardview.widget.CardView>
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

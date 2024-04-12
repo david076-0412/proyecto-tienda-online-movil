@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.PROCESS_OUTGOING_CALLS" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="true" />
+
+    <application
+
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+        <activity
+            android:name=".UserSettings"
+            android:exported="true" />
+        <activity
+            android:name=".settings.SettingsActivity"
+            android:exported="true" />
+        <activity
+            android:name=".settings.InfoAppActivity"
+            android:exported="true" />
+        <activity
+            android:name=".repartidor.PanelChat_RepartidorActivity"
+            android:exported="false" />
+        <activity
+            android:name=".repartidor.Perfil_RepartidorActivity"
+            android:exported="false" />
+        <activity
+            android:name=".repartidor.DetallesProductosRepartidorActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".repartidor.Productos_FotoActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="com.aplication.appgestionrepartos"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+
+        <activity
+            android:name=".repartidor.PaintActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".interfaz.InterfazRepartidorActivity"
+            android:exported="true"
+            android:label="@string/title_activity_interfaz_repartidor"
+            android:theme="@style/Theme.AppCompat.NoActionBar">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".DonutProgress"
+            android:exported="true">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".cliente_ui.compras.DetallesComprasActivity"
+            android:exported="true">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".administrador_ui.pagos.DetallesClienteActivity"
+            android:exported="true">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".administrador.ActualizarProveedorActivity"
+            android:exported="true">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".login.OnboardingActivity"
+            android:exported="true">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".cliente.Pagos_CarritoActivity"
+            android:exported="true">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".administrador_ui.inicio_a.AnuncioActivity"
+            android:exported="true">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".AnunciosFragment"
+            android:exported="true">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".LoadingDialog"
+            android:exported="true">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".cliente_ui.ubicacion.RepartidorUbicacionActivity"
+            android:exported="true">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <!--
+             TODO: Before you run your application, you need a Google Maps API key.
+
+             To get one, follow the directions here:
+
+                https://developers.google.com/maps/documentation/android-sdk/get-api-key
+
+             Once you have your API key (it starts with "AIza"), define a new property in your
+             project's local.properties file (e.g. MAPS_API_KEY=Aiza...), and replace the
+             "YOUR_API_KEY" string in this file with "${MAPS_API_KEY}".
+        -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyAfaLT2xwbj14DiVavQg8fcoPOE64o48x0" />
+
+        <activity
+            android:name=".chat.Chat_RepartidorActivity"
+            android:exported="true" />
+        <activity
+            android:name=".chat.ContactosRepartidorActivity"
+            android:exported="true" />
+        <activity
+            android:name=".cliente.Lista_RepartidoresActivity"
+            android:exported="true" />
+        <activity
+            android:name=".administrador.ProveedoresActivity"
+            android:exported="true" />
+        <activity
+            android:name=".administrador.EditorQuejasSugerenciasActivity"
+            android:exported="true" />
+        <activity
+            android:name=".administrador.InfoQuejas_SugerenciasActivity"
+            android:exported="true" />
+        <activity
+            android:name=".pago.PagosPerfilClientesActivity"
+            android:exported="true" />
+        <activity
+            android:name=".pago.ClientesRegistradosActivity"
+            android:exported="true" />
+        <activity
+            android:name=".pago.Pago_Anuncio_OficialActivity"
+            android:exported="true" />
+        <activity
+            android:name=".administrador.Quejas_Sugerencias_FinalActivity"
+            android:exported="true" />
+        <activity
+            android:name=".cliente.Quejas_SugerenciasActivity"
+            android:exported="true" />
+        <activity
+            android:name=".cliente.ChatBotActivity"
+            android:exported="true">
+            <meta-data
+                android:name="preloaded_fonts"
+                android:resource="@array/preloaded_fonts" />
+        </activity>
+        <activity
+            android:name=".cliente.ImagenProductosActivity"
+            android:exported="true" />
+        <activity
+            android:name=".login.SplashScreenActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".administrador.PedidoFinalActivity"
+            android:exported="true" />
+        <activity
+            android:name=".chat.Chat_Administrador"
+            android:exported="true">
+            <meta-data
+                android:name="preloaded_fonts"
+                android:resource="@array/preloaded_fonts" />
+        </activity>
+        <activity
+            android:name=".chat.Chat_Cliente"
+            android:exported="true">
+            <meta-data
+                android:name="preloaded_fonts"
+                android:resource="@array/preloaded_fonts" />
+        </activity>
+        <activity
+            android:name=".chat.ContactosClienteActivity"
+            android:exported="true" />
+        <activity
+            android:name=".administrador.PanelChat_Administrador"
+            android:exported="true" />
+        <activity
+            android:name=".administrador.PerfilAdministradorActivity"
+            android:exported="true" />
+        <activity
+            android:name=".chat.ContactosAdministradorActivity"
+            android:exported="true" />
+        <activity
+            android:name=".interfaz.InterfazAdministradorActivity"
+            android:exported="true"
+            android:label="@string/title_activity_interfaz_administrador"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity
+            android:name=".cliente.PanelChat_Cliente"
+            android:exported="true" />
+        <activity
+            android:name=".cliente.CalculadoraActivity"
+            android:exported="true"
+            android:parentActivityName=".interfaz.InterfazClienteActivity" />
+        <activity
+            android:name=".cliente.ListadoProductosActivity"
+            android:exported="true" />
+        <activity
+            android:name=".cliente.ComprasPedidoActivity"
+            android:exported="true" />
+        <activity
+            android:name=".interfaz.InterfazClienteActivity"
+            android:exported="true"
+            android:label="@string/title_activity_interfaz_cliente"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity
+            android:name=".administrador.PedidoEditarActivity"
+            android:exported="true" />
+        <activity
+            android:name=".cliente.PerfilActivity"
+            android:exported="true" />
+        <activity
+            android:name=".repartidor.ProductoClienteActivity"
+            android:exported="true" />
+        <activity
+            android:name=".repartidor.vista.MainPaintActivity"
+            android:exported="true" />
+        <activity
+            android:name=".repartidor.RepartidorActivity"
+            android:exported="true" />
+        <activity
+            android:name=".repartidor.InfoClienteActivity"
+            android:exported="true" />
+        <activity
+            android:name=".cliente.PedidoActivity"
+            android:exported="true" />
+        <activity
+            android:name=".cliente.DetalleActivity"
+            android:exported="true" />
+        <activity
+            android:name=".cliente.CarritoActivity"
+            android:exported="true"
+            tools:ignore="MissingClass" />
+        <activity
+            android:name=".cliente.AgregarCompraActivity"
+            android:exported="true" />
+        <activity
+            android:name=".administrador.CreatePetActivity"
+            android:exported="true" />
+        <activity
+            android:name=".cliente.ClienteActivity"
+            android:exported="true" />
+        <activity
+            android:name=".login.RegisterActivity"
+            android:exported="true" />
+        <activity
+            android:name=".chat.LoginActivity"
+            android:exported="true" />
+    </application>
+
+</manifest>

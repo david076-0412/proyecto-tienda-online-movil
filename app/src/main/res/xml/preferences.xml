@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+
+
+    <PreferenceCategory
+        android:title="General">
+
+
+        <Preference
+            android:key="theme_prefence"
+            android:defaultValue="false"
+            android:title="Bienvenido a APPGESTIONREPARTOS"/>
+
+
+
+
+    </PreferenceCategory>
+
+
+    <PreferenceCategory
+        android:title="About">
+        <Preference
+            android:title="Version Beta"
+            android:summary="1.0.0"/>
+        <Preference
+            android:key="contact_preference"
+            android:title="About Us"/>
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="Retornar">
+
+        <Preference
+            android:key="volver_preference"
+            android:title="Volver al inicio"/>
+
+    </PreferenceCategory>
+
+
+</PreferenceScreen>
